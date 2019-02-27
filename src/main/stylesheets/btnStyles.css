@@ -1,0 +1,228 @@
+#videoBtn{
+    -fx-background-image: url("/main/images/film.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: rgb(150,150,150);
+    -fx-background-radius: 0.5em;
+    -fx-effect: dropshadow(gaussian, gray, 10, 0, 0, 0);
+}
+#textBtn {
+    -fx-background-image: url("/main/images/glyphicons-105-text-strike@2x.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: rgb(150,150,150);
+    -fx-background-radius: 0.5em;
+    -fx-effect: dropshadow(gaussian, gray, 10, 0, 0, 0);
+}
+#imageBtn {
+    -fx-background-image: url("/main/images/glyphicons-139-picture@3x.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: rgb(150,150,150);
+    -fx-background-radius: 0.5em;
+    -fx-effect: dropshadow(gaussian, gray, 10, 0, 0, 0);
+}
+#ffBtn {
+    -fx-background-image: url("/main/images/glyphicons-178-fast-forward@3x.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: rgb(150,150,150);
+    -fx-background-radius: 0.5em;
+    -fx-effect: dropshadow(gaussian, gray, 10, 0, 0, 0);
+}
+#cutBtn {
+    -fx-background-image: url("/main/images/glyphicons-599-scissors-alt@3x.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: rgb(150,150,150);
+    -fx-background-radius: 0.5em;
+    -fx-effect: dropshadow(gaussian, gray, 10, 0, 0, 0);
+}
+#audioBtn {
+    -fx-background-image: url("/main/images/musicalnote.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: rgb(150,150,150);
+    -fx-background-radius: 0.5em;
+    -fx-effect: dropshadow(gaussian, gray, 10, 0, 0, 0);
+}
+#rewindBtn {
+    -fx-background-image: url("/main/images/glyphicons-173-rewind@3x.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: rgb(150,150,150);
+    -fx-background-radius: 0.5em;
+    -fx-effect: dropshadow(gaussian, gray, 10, 0, 0, 0);
+}
+#launchBtn {
+    -fx-graphic: url("/main/images/play.png");
+    -fx-background-radius: 5em;
+    -fx-background-color: #66bef4;
+    -fx-opacity: 0.7;
+}
+
+#startTheatreBtn {
+    -fx-graphic: url("/main/images/glyphicons-578-tv@2x.png");
+    -fx-background-color: darkgrey;
+}
+#startTheatreBtn:hover {
+    -fx-background-color: lightgrey;
+}
+
+#saveBtn {
+    -fx-opacity: 0.8;
+    -fx-background-image: url("/main/images/save.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: rgb(150,150,150);
+    -fx-background-radius: 0.5em;
+    -fx-effect: dropshadow(gaussian, gray, 10, 0, 0, 0);
+}
+#saveBtn:hover, #launchBtn:hover, #helpBtn:hover, #videoBtn:hover, #saveTextBtn:hover, #textBtn:hover, #backBtn:hover, #imageBtn:hover, #ffBtn:hover, #cutBtn:hover,
+#audioBtn:hover, #imageFileBtn:hover, #audioFileBtn:hover, #videoFileBtn:hover{
+    -fx-effect: dropshadow(gaussian, #f0f0f0, 5, 0, 0, 0);
+    -fx-stroke: darkgrey;
+}
+
+#saveTextBtn {
+    -fx-graphic: url("/main/images/save.png");
+    -fx-background-radius: 5em;
+    -fx-background-color: transparent;
+    -fx-opacity: 0.7;
+}
+
+#videoCreateBtn {
+    -fx-graphic: url("/main/images/glyphicons-578-tv@3x.png");
+    -fx-background-color: transparent;
+}
+#videoCreateBtn:hover {
+    -fx-border-color: transparent;
+}
+#liveCreateBtn {
+    -fx-graphic: url("/main/images/glyphicons-33-wifi-alt@3x.png");
+    -fx-background-color: transparent;
+}
+#liveCreateBtn:hover {
+    -fx-border-color: transparent;
+}
+#mainOpenQueueBtn {
+    -fx-graphic: url("/main/images/glyphicons-142-database-plus@3x.png");
+    -fx-background-color: transparent;
+}
+#mainOpenQueueBtn:hover {
+    -fx-border-color: transparent;
+}
+#helpBtn{
+    -fx-graphic: url("/main/images/help.png");
+    -fx-background-radius: 3em;
+    -fx-background-color: transparent;
+    -fx-opacity: 0.7;
+}
+
+#backBtn {
+    -fx-graphic: url("/main/images/back.png");
+    -fx-background-radius: 5em;
+    -fx-background-color: rgb(150,150,150);
+    -fx-opacity: 0.8;
+}
+#helpBtn:hover, #launchBtn:hover, #backBtn:hover, #saveBtn:hover, #saveTextBtn:hover {
+    -fx-opacity: 1.0;
+}
+
+#addVideoMarkerBtn, #addTextBtn, #mainAddToQueueBtn {
+    -fx-graphic: url("/main/images/add.png");
+    -fx-background-color: transparent;
+    -fx-opacity: 0.5;
+}
+#editVideoMarkerBtn, #editTextBtn {
+    -fx-graphic: url("/main/images/edit.png");
+    -fx-background-color: transparent;
+    -fx-opacity: 0.5;
+}
+#removeVideoMarkerBtn, #removeTextBtn, #removeFromQueueBtn {
+    -fx-graphic: url("/main/images/delete.png");
+    -fx-background-color: transparent;
+    -fx-opacity: 0.5;
+}
+#removeVideoMarkerBtn:hover, #addVideoMarkerBtn:hover, #editVideoMarkerBtn:hover, #addTextBtn:hover, #editTextBtn:hover,  #removeTextBtn:hover, #launcherRemoveQueueBtn:hover{
+    -fx-opacity: 1.0; 
+}
+
+#contentLip {
+    -fx-background-color: linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),
+                        linear-gradient(#020b02, #3a3a3a),
+                        linear-gradient(#9d9e9d 0%, #6b6a6b 20%, #343534 80%, #242424 100%),
+                        linear-gradient(#8a8a8a 0%, #6b6a6b 20%, #343534 80%, #262626 100%),
+                        linear-gradient(#777777 0%, #606060 50%, #505250 51%, #2a2b2a 100%);
+    -fx-graphic: url("/main/images/glyphicons-517-menu-hamburger.png");
+    -fx-background-radius: 0em 0em 5em 5em;
+}
+#saveTransitionBtn {
+    -fx-graphic: url("/main/images/glyphicons-445-floppy-saved.png");
+    -fx-background-color: transparent;
+    -fx-effect: dropshadow(gaussian, #f0f0f0, 5, 0, 0, 0);
+}
+#saveTransitionBtn:hover {
+    -fx-border-color: #666666;
+}
+#imageFileBtn, #audioFileBtn, #videoFileBtn {
+    -fx-background-image: url("/main/images/glyphicons-145-folder-open@3x.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: transparent;
+    -fx-background-radius: 0.3em;
+    -fx-effect: dropshadow(gaussian, gray, 10, 0, 0, 0);
+}
+#imageLinkBtn-inactive, #videoLinkBtn-inactive {
+    -fx-background-image: url("/main/images/glyphicons-51-link.png");
+    -fx-background-size: 100% 60%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: transparent;
+}
+#imageLinkBtn-active, #videoLinkBtn-active {
+    -fx-background-image: url("/main/images/glyphicons-51-link.png");
+    -fx-background-size: 100% 60%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-border-radius: 5px;
+    -fx-background-color: grey;
+}
+#playBtn {
+    -fx-graphic: url("/main/images/glyphicons-174-play.png");
+    -fx-background-color: transparent;
+    -fx-border-color: #f2f0ff;
+    -fx-border-width: 1px;
+    -fx-border-radius: 2px;
+}
+#pauseBtn {
+    -fx-graphic: url("/main/images/glyphicons-175-pause.png");
+    -fx-background-color: transparent;
+    -fx-border-color: #f2f0ff;
+    -fx-border-width: 1px;
+    -fx-border-radius: 2px;
+}
+#volumeBtn {
+    -fx-graphic: url("/main/images/glyphicons-185-volume-up.png");
+    -fx-background-color: transparent;
+}
+#mutedBtn {
+    -fx-graphic: url("/main/images/glyphicons-183-mute.png");
+    -fx-background-color: transparent;
+}
+#stopBtn{
+    -fx-graphic: url("/main/images/glyphicons-533-stop-sign@3x.png");
+    -fx-background-color: transparent;
+}
+#stopBtn:hover{
+    -fx-border-color: transparent;
+}

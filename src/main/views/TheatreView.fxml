@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.media.MediaView?>
+
+<AnchorPane id="theatreAnchorPane" fx:id="theatreAnchorPane" focusTraversable="true" maxHeight="720.0" maxWidth="1280.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controllers.TheatreController">
+   <children>
+      <MediaView id="theatreMediaView" fx:id="theatreMediaView" fitHeight="720.0" fitWidth="1280.0" focusTraversable="true" smooth="false">
+         <viewport>
+            <Rectangle2D />
+         </viewport></MediaView>
+      <StackPane id="timerStackPane" fx:id="timerStackPane" focusTraversable="true" layoutX="401.0" layoutY="238.0" prefHeight="163.0" prefWidth="337.0" visible="true" />
+   </children>
+</AnchorPane>

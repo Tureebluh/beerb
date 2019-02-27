@@ -1,0 +1,19 @@
+#profileListView, #queueListView {
+    -fx-font: 24px "Times New Roman";
+    -fx-border-width: 2px;
+    -fx-border-color: black;
+    -fx-background-color: linear-gradient(goldenrod 25%, darkgoldenrod 75%)
+}
+#queueListView {
+    -fx-font: 20px "Times New Roman";
+}
+.list-cell:selected {
+    -fx-text-fill: black;
+    -fx-background-color: #ffc639;
+}
+.list-cell:hover {
+    -fx-background-color: #ffc639;
+}
+.list-cell {
+    -fx-background-color: linear-gradient(goldenrod 25%, darkgoldenrod 75%);
+}

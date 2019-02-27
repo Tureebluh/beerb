@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.media.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="previewContainer" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controllers.EditViewController">
+   <right>
+      <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="720.0" prefWidth="200.0" style="-fx-background-color: darkgray;" BorderPane.alignment="CENTER">
+         <content>
+            <ListView fx:id="markerEventsListView" prefHeight="718.0" prefWidth="198.0">
+               <contextMenu>
+                  <ContextMenu>
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#editVideoMarker" text="Edit" />
+                      <MenuItem mnemonicParsing="false" onAction="#removeVideoMarker" text="Remove" />
+                    </items>
+                  </ContextMenu>
+               </contextMenu></ListView>
+         </content>
+         <padding>
+            <Insets left="5.0" right="5.0" />
+         </padding>
+      </ScrollPane>
+   </right>
+   <left>
+      <VBox fx:id="leftVBox" minHeight="-Infinity" minWidth="-Infinity" prefHeight="718.0" prefWidth="75.0" spacing="25.0" style="-fx-background-color: darkgrey;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="videoBtn" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addVideo" prefHeight="50.0" prefWidth="50.0" scaleShape="false">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="audioBtn" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addAudio" prefHeight="50.0" prefWidth="50.0" />
+            <Button fx:id="imageBtn" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addImage" prefHeight="50.0" prefWidth="50.0" />
+            <Button fx:id="textBtn" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addText" prefHeight="50.0" prefWidth="50.0" />
+            <Button fx:id="ffBtn" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addFF" prefHeight="50.0" prefWidth="50.0" />
+            <Button fx:id="cutBtn" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addCut" prefHeight="50.0" prefWidth="50.0" />
+         </children>
+         <padding>
+            <Insets left="12.5" top="50.0" />
+         </padding></VBox>
+   </left>
+   <bottom>
+      <HBox prefHeight="70.0" prefWidth="200.0" spacing="10.0" style="-fx-background-color: darkgrey;" BorderPane.alignment="CENTER_LEFT">
+         <children>
+               <Button fx:id="playPauseBtn" mnemonicParsing="false" onAction="#playPauseVideo" prefHeight="40.0" prefWidth="25.0" HBox.hgrow="NEVER">
+                  <effect>
+                     <DropShadow color="#909090" />
+                  </effect>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="10.0" />
+               </HBox.margin>
+               </Button>
+            <VBox prefHeight="50.0" prefWidth="1310.0" HBox.hgrow="ALWAYS">
+               <children>
+                     <Slider fx:id="mainVideoTimeSlider" blockIncrement="1.0" majorTickUnit="5.0" minorTickCount="1" prefHeight="50.0" prefWidth="1233.0" showTickMarks="true" />
+                     <Label fx:id="mainVideoTimeLabel" alignment="CENTER" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: rgb(100,100,100);" text="0:00/0:00" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" wrapText="true">
+                        <font>
+                           <Font name="Times New Roman Bold" size="18.0" />
+                        </font>
+                     <VBox.margin>
+                        <Insets left="5.0" />
+                     </VBox.margin>
+                     </Label>
+               </children>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </VBox>
+               <Button fx:id="volumeBtn" mnemonicParsing="false" onAction="#muteVideo" prefHeight="40.0" prefWidth="16.0">
+                  <effect>
+                     <DropShadow color="#909090" />
+                  </effect>
+               <HBox.margin>
+                  <Insets bottom="15.0" />
+               </HBox.margin>
+               </Button>
+            <VBox alignment="CENTER" prefHeight="50.0" prefWidth="145.0">
+               <children>
+                     <Slider fx:id="mainVolumeSlider" blockIncrement="5.0" majorTickUnit="10.0" minorTickCount="5" prefHeight="68.0" prefWidth="100.0" snapToTicks="true" value="100.0" />
+                     <Label fx:id="mainVolumeSliderLabel" alignment="CENTER" contentDisplay="TEXT_ONLY" graphicTextGap="0.0" prefHeight="28.0" prefWidth="50.0" style="-fx-background-color: rgb(100,100,100);" text="100" textAlignment="CENTER" textFill="WHITE">
+                        <font>
+                           <Font name="Georgia Bold" size="14.0" />
+                        </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     </Label>
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+   </bottom>
+   <top>
+      <HBox fx:id="controlPanelHBox" prefHeight="50.0" prefWidth="1555.0" spacing="25.0" style="-fx-background-color: darkgrey;" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding></HBox>
+   </top>
+   <center>
+      <AnchorPane fx:id="mwAnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: grey;" BorderPane.alignment="TOP_LEFT">
+         <children>
+            <MediaView fx:id="editMediaView" fitHeight="720.0" fitWidth="1280.0" nodeOrientation="INHERIT" smooth="false" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

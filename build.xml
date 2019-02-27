@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="BeeRB" default="default" basedir="." xmlns:fx="javafx:com.sun.javafx.tools.ant">
+    <description>BeeRB - Twitch Streaming Companion Application</description>
+    <import file="nbproject/build-impl.xml"/>
+	<target name="-post-jfx-deploy">
+        <fx:deploy width="${javafx.run.width}" height="${javafx.run.height}"
+					verbose="true"
+					nativeBundles="exe"
+					outdir="${basedir}/${dist.dir}" outfile="${application.title}">
+			<fx:application name="${application.title}" mainClass="${javafx.main.class}"/>
+			<fx:resources>
+				<fx:fileset dir="${basedir}/${dist.dir}" includes="BeeRB.jar"/>
+			</fx:resources>
+			<fx:info title="${application.title}" vendor="${application.vendor}"/>
+			<fx:permissions elevated="true" cacheCertificates="true"/>
+			<fx:preferences shortcut="true"/>
+		</fx:deploy>          
+	</target>
+</project>

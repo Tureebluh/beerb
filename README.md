@@ -28,8 +28,6 @@ This project is licensed under the Mozilla Public License 2.0 - see the [LICENSE
 
 ## Acknowledgments
 
-* I set out to make a program that streamers could use to play custom videos for their audience without the hassle of editing and rendering video through traditional means. I've included a few image sketchups showing the evolution of the software that's kind of neat to check out.
-
-* Huge thanks to family and friends that helped test and give feedback. The program wouldn't be where it is today otherwise.
+* I set out to make a program that streamers could use to play custom videos for their audience without the hassle of editing and rendering video through traditional means. I've included a few image sketchups showing the evolution of the software that's kind of neat to check out.  Learned a ton of things to put forward into new projects in the future.
 
 * You can download the Windows installer of BeeRB [here](https://www.tureebluh.com/beerb)
